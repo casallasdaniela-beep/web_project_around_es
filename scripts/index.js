@@ -29,7 +29,7 @@ initialCards.forEach(function(card){
     console.log(card.name);
 })
 
-const editButtom = document.querySelector('.profile__edit-button');
+const editButton = document.querySelector('.profile__edit-button');
 const editPopup = document.querySelector('#edit-popup');
 const closeButton = editPopup.querySelector('.popup__close');
 const profileTitle = document.querySelector('.profile__title');
@@ -67,7 +67,7 @@ function handleProfileFormSubmit(evt) {
 
   profileTitle.textContent = nameInput.value;
   profileDescription.textContent = descriptionInput.value;
-  
+
   closeModal(editPopup);
 }
 
